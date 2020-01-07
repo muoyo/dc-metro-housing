@@ -1207,7 +1207,7 @@ Id,Id2,Geography_County,State,Population
 0500000US24027,24027,Howard County, Maryland,323196
 0500000US24029,24029,Kent County, Maryland,19383
 0500000US24031,24031,Montgomery County, Maryland,1052567
-0500000US24033,24033,Prince George's County, Maryland,909308
+0500000US24033,24033,Prince Georges County, Maryland,909308
 0500000US24035,24035,Queen Anne's County, Maryland,50251
 0500000US24037,24037,St. Mary's County, Maryland,112664
 0500000US24039,24039,Somerset County, Maryland,25675
@@ -1215,7 +1215,7 @@ Id,Id2,Geography_County,State,Population
 0500000US24043,24043,Washington County, Maryland,150926
 0500000US24045,24045,Wicomico County, Maryland,103195
 0500000US24047,24047,Worcester County, Maryland,51823
-0500000US24510,24510,Baltimore city, Maryland,602495
+0500000US24510,24510,Baltimore City, Maryland,602495
 0500000US25001,25001,Barnstable County, Massachusetts,213413
 0500000US25003,25003,Berkshire County, Massachusetts,126348
 0500000US25005,25005,Bristol County, Massachusetts,564022
@@ -2852,7 +2852,6 @@ Id,Id2,Geography_County,State,Population
 0500000US51063,51063,Floyd County, Virginia,15795
 0500000US51065,51065,Fluvanna County, Virginia,26783
 0500000US51067,51067,Franklin County, Virginia,56195
-0500000US51069,51069,Frederick County, Virginia,88355
 0500000US51071,51071,Giles County, Virginia,16844
 0500000US51073,51073,Gloucester County, Virginia,37349
 0500000US51075,51075,Goochland County, Virginia,23244
@@ -2878,7 +2877,6 @@ Id,Id2,Geography_County,State,Population
 0500000US51115,51115,Mathews County, Virginia,8802
 0500000US51117,51117,Mecklenburg County, Virginia,30650
 0500000US51119,51119,Middlesex County, Virginia,10769
-0500000US51121,51121,Montgomery County, Virginia,98985
 0500000US51125,51125,Nelson County, Virginia,14836
 0500000US51127,51127,New Kent County, Virginia,22391
 0500000US51131,51131,Northampton County, Virginia,11735
@@ -2914,44 +2912,44 @@ Id,Id2,Geography_County,State,Population
 0500000US51195,51195,Wise County, Virginia,38012
 0500000US51197,51197,Wythe County, Virginia,28754
 0500000US51199,51199,York County, Virginia,67846
-0500000US51510,51510,Alexandria city, Virginia,160530
-0500000US51520,51520,Bristol city, Virginia,16482
-0500000US51530,51530,Buena Vista city, Virginia,6237
-0500000US51540,51540,Charlottesville city, Virginia,48117
-0500000US51550,51550,Chesapeake city, Virginia,242634
-0500000US51570,51570,Colonial Heights city, Virginia,17833
-0500000US51580,51580,Covington city, Virginia,5460
-0500000US51590,51590,Danville city, Virginia,40693
-0500000US51595,51595,Emporia city, Virginia,5121
-0500000US51600,51600,Fairfax city, Virginia,24574
-0500000US51610,51610,Falls Church city, Virginia,14772
-0500000US51620,51620,Franklin city, Virginia,8013
-0500000US51630,51630,Fredericksburg city, Virginia,29144
-0500000US51640,51640,Galax city, Virginia,6423
-0500000US51650,51650,Hampton city, Virginia,134313
-0500000US51660,51660,Harrisonburg city, Virginia,54033
-0500000US51670,51670,Hopewell city, Virginia,22596
-0500000US51678,51678,Lexington city, Virginia,7136
-0500000US51680,51680,Lynchburg city, Virginia,82126
-0500000US51683,51683,Manassas city, Virginia,41641
-0500000US51685,51685,Manassas Park city, Virginia,17307
-0500000US51690,51690,Martinsville city, Virginia,12902
-0500000US51700,51700,Newport News city, Virginia,178626
-0500000US51710,51710,Norfolk city, Virginia,244076
-0500000US51720,51720,Norton city, Virginia,3968
-0500000US51730,51730,Petersburg city, Virginia,31567
-0500000US51735,51735,Poquoson city, Virginia,12190
-0500000US51740,51740,Portsmouth city, Virginia,94632
-0500000US51750,51750,Radford city, Virginia,18339
-0500000US51760,51760,Richmond city, Virginia,228783
-0500000US51770,51770,Roanoke city, Virginia,99920
-0500000US51775,51775,Salem city, Virginia,25643
-0500000US51790,51790,Staunton city, Virginia,24922
-0500000US51800,51800,Suffolk city, Virginia,91185
-0500000US51810,51810,Virginia Beach city, Virginia,450189
-0500000US51820,51820,Waynesboro city, Virginia,22628
-0500000US51830,51830,Williamsburg city, Virginia,14896
-0500000US51840,51840,Winchester city, Virginia,28108
+0500000US51510,51510,Alexandria City, Virginia,160530
+0500000US51520,51520,Bristol City, Virginia,16482
+0500000US51530,51530,Buena Vista City, Virginia,6237
+0500000US51540,51540,Charlottesville City, Virginia,48117
+0500000US51550,51550,Chesapeake City, Virginia,242634
+0500000US51570,51570,Colonial Heights City, Virginia,17833
+0500000US51580,51580,Covington City, Virginia,5460
+0500000US51590,51590,Danville City, Virginia,40693
+0500000US51595,51595,Emporia City, Virginia,5121
+0500000US51600,51600,Fairfax City, Virginia,24574
+0500000US51610,51610,Falls Church City, Virginia,14772
+0500000US51620,51620,Franklin City, Virginia,8013
+0500000US51630,51630,Fredericksburg City, Virginia,29144
+0500000US51640,51640,Galax City, Virginia,6423
+0500000US51650,51650,Hampton City, Virginia,134313
+0500000US51660,51660,Harrisonburg City, Virginia,54033
+0500000US51670,51670,Hopewell City, Virginia,22596
+0500000US51678,51678,Lexington City, Virginia,7136
+0500000US51680,51680,Lynchburg City, Virginia,82126
+0500000US51683,51683,Manassas City, Virginia,41641
+0500000US51685,51685,Manassas Park City, Virginia,17307
+0500000US51690,51690,Martinsville City, Virginia,12902
+0500000US51700,51700,Newport News City, Virginia,178626
+0500000US51710,51710,Norfolk City, Virginia,244076
+0500000US51720,51720,Norton City, Virginia,3968
+0500000US51730,51730,Petersburg City, Virginia,31567
+0500000US51735,51735,Poquoson City, Virginia,12190
+0500000US51740,51740,Portsmouth City, Virginia,94632
+0500000US51750,51750,Radford City, Virginia,18339
+0500000US51760,51760,Richmond City, Virginia,228783
+0500000US51770,51770,Roanoke City, Virginia,99920
+0500000US51775,51775,Salem City, Virginia,25643
+0500000US51790,51790,Staunton City, Virginia,24922
+0500000US51800,51800,Suffolk City, Virginia,91185
+0500000US51810,51810,Virginia Beach City, Virginia,450189
+0500000US51820,51820,Waynesboro City, Virginia,22628
+0500000US51830,51830,Williamsburg City, Virginia,14896
+0500000US51840,51840,Winchester City, Virginia,28108
 0500000US53001,53001,Adams County, Washington,19759
 0500000US53003,53003,Asotin County, Washington,22610
 0500000US53005,53005,Benton County, Washington,201877
