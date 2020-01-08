@@ -13,13 +13,13 @@ VJ Paravastu<br>
 
 
 ## Summary and Links to Files:<br>
-SlideDeck (pdf)<br>
-Data Sources<br>
-Final dataset: cleaned_for_testing<br>
-Notebooks<br>
-Technical Notebook<br>
-Exploratory Data Analysis<br>
-Python files<br>
-Data Cleaning<br>
-Hypothesis Tests<br>
-Visualizations
+- SlideDeck (pdf)<br>
+- Data Sources<br>
+  -Final dataset: cleaned_for_testing<br>
+- Notebooks<br>
+  - Technical Notebook<br>
+  - Exploratory Data Analysis<br>
+- Python files<br>
+ - Data Cleaning<br>
+ - Hypothesis Tests<br>
+ - Visualizations
