@@ -1,18 +1,18 @@
 
 
-Title: Schools, Hospitals & House Prices in the DC Metro
+## Title: Schools, Hospitals & House Prices in the DC Metro
 
 
-Goals:
+## Goals:
 The goal of this analysis is to gain a better understanding of factors influencing House prices in counties of Washington, D.C metro area. Specifically, we tested whether number of Public schools, Private schools or Hospitals had a significant association with house prices.
 
-Contributors:<br>
+## Contributors:<br>
 Muoyo Okome <br>
 VJ Paravastu<br>
 
 
 
-Summary and Links to Files:<br>
+## Summary and Links to Files:<br>
 SlideDeck (pdf)<br>
 Data Sources<br>
 Final dataset: cleaned_for_testing<br>
