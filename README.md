@@ -18,6 +18,6 @@ The goal of this analysis is to gain a better understanding of factors influenci
   - <a href='notebooks/dchousing.ipynb'>Technical Notebook</a><br>
   - <a href='presentation/dchousing_EDA.ipynb'>Exploratory Data Analysis</a><br>
 - Python files<br>
- - <a href='python_files/data_cleaning.py'>Data Cleaning</a><br>
- - <a href='python_files/hypothesis tests.py'>Hypothesis Tests</a><br>
- - <a href='python_files/visualizations.py'>Visualizations</a>
+  - <a href='python_files/data_cleaning.py'>Data Cleaning</a><br>
+  - <a href='python_files/hypothesis tests.py'>Hypothesis Tests</a><br>
+  - <a href='python_files/visualizations.py'>Visualizations</a>
