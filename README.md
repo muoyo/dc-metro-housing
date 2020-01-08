@@ -22,4 +22,4 @@ Exploratory Data Analysis<br>
 Python files<br>
 Data Cleaning<br>
 Hypothesis Tests<br>
-Visualizations<br>
+Visualizations
