@@ -11,18 +11,19 @@ import matplotlib.pyplot as plt
 
 
 # Controls appearance of seaborn plots. Options: paper, notebook, talk, or poster
-SEABORN_CONTEXT = 'poster' 
+SEABORN_CONTEXT = 'talk' 
 
 
-def barplots_2x2_matrix(dcmi, x, y, plot_titles=[['Higher Price, Lower % Private Schools', 'Higher Price, Higher % Private Schools'],
+def barplots_2x2_matrix(dcmi, x, y, figsize=(20, 20), context=SEABORN_CONTEXT,
+                        plot_titles=[['Higher Price, Lower % Private Schools', 'Higher Price, Higher % Private Schools'],
                                                  ['Lower Price, Lower % Private Schools', 'Lower Price, Higher % Private Schools']]):    
 
-    f, ax = plt.subplots(2, 2, figsize=(22,16), sharey=True)
+    f, ax = plt.subplots(2, 2, figsize=figsize, sharey=True)
 
 #     plot_titles = [['Higher Price, Lower % Private Schools','Higher Price, Higher % Private Schools'],
 #                    ['Lower Price, Lower % Private Schools','Lower Price, Higher % Private Schools']]
 
-    sns.set_context('talk')
+    sns.set_context(context)
     sns.despine(f)
     
     sns.barplot(dcmi.high_price_low_pct_private_schools[x], 
@@ -47,14 +48,14 @@ def barplots_2x2_matrix(dcmi, x, y, plot_titles=[['Higher Price, Lower % Private
 
 
  
-def barplots_side_by_side(dcmi, x, y, plot1_title, plot2_title):
+def barplots_side_by_side(dcmi, x, y, plot1_title, plot2_title, figsize=(25,10), context=SEABORN_CONTEXT):
     """
     This function graphs 2 barplots side by side using a DCMetroInfo object
 
     """
     
-    f, ax = plt.subplots(1, 2, figsize=(30,10), sharey=True)
-    sns.set_context(SEABORN_CONTEXT)
+    f, ax = plt.subplots(1, 2, figsize=figsize, sharey=True)
+    sns.set_context(context)
     sns.despine(f)
     sns.barplot(dcmi.low_price_counties[x], dcmi.low_price_counties[y], ax=ax[0], color='red')
     plt.setp(ax[0].xaxis.get_majorticklabels(),rotation=90)
@@ -65,14 +66,14 @@ def barplots_side_by_side(dcmi, x, y, plot1_title, plot2_title):
     
     return f, ax
 
-def barplots_side_by_side_proportion(dcmi, x, y_num, y_denom, plot1_title, plot2_title):
+def barplots_side_by_side_proportion(dcmi, x, y_num, y_denom, plot1_title, plot2_title, figsize=(25,10), context=SEABORN_CONTEXT):
     """
     This function graphs 2 barplots side by side using a DCMetroInfo object
 
     """
     
-    f, ax = plt.subplots(1, 2, figsize=(30,10), sharey=True)
-    sns.set_context(SEABORN_CONTEXT)
+    f, ax = plt.subplots(1, 2, figsize=figsize, sharey=True)
+    sns.set_context(context)
     sns.despine(f)
     sns.barplot(dcmi.low_price_counties[x], 
                 dcmi.low_price_counties[y_num] / dcmi.low_price_counties[y_denom], ax=ax[0], color='red')
