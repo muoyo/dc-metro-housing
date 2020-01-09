@@ -51,8 +51,6 @@ def barplots_2x2_matrix(dcmi, x, y, figsize=(20, 20), context=SEABORN_CONTEXT,
     barplot(x, y, dcmi.low_price_low_pct_private_schools, ax[1][0], plot_titles[1][0], color=SEABORN_PALETTE[4])
     barplot(x, y, dcmi.low_price_high_pct_private_schools, ax[1][1], plot_titles[1][1], color='black')    
 
-
-    sns.palplot(SEABORN_PALETTE)
     
     for i in np.arange(0,2):
         for j in np.arange(0,2):
