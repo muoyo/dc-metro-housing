@@ -61,10 +61,14 @@ def barplots_side_by_side(dcmi, x, y, plot1_title, plot2_title, figsize=(25,10),
     sns.despine(f)
     
     
-    sns.barplot(dcmi.low_price_counties[x], dcmi.low_price_counties[y], ax=ax[0], color=SEABORN_PALETTE[4])
+    low_price_counties = dcmi.low_price_counties.sort_values(by=y, axis=0, ascending=False)
+    high_price_counties = dcmi.high_price_counties.sort_values(by=y, axis=0, ascending=False)
+    
+    
+    sns.barplot(low_price_counties[x], low_price_counties[y], ax=ax[0], color=SEABORN_PALETTE[4])
     plt.setp(ax[0].xaxis.get_majorticklabels(),rotation=90)
     ax[0].title.set_text(plot1_title)
-    sns.barplot(dcmi.high_price_counties[x], dcmi.high_price_counties[y], ax=ax[1], color=SEABORN_PALETTE[2])
+    sns.barplot(high_price_counties[x], high_price_counties[y], ax=ax[1], color=SEABORN_PALETTE[2])
     plt.setp(ax[1].xaxis.get_majorticklabels(),rotation=90);
     ax[1].title.set_text(plot2_title)
     
@@ -79,7 +83,11 @@ def barplots_side_by_side_proportion(dcmi, x, y_num, y_denom, plot1_title, plot2
     f, ax = plt.subplots(1, 2, figsize=figsize, sharey=True)
     sns.set_context(context)
     sns.despine(f)
+
     
+    low_price_counties = sorted(dcmi.low_price_counties.sort_values, key=dcmi.low_price_counties[y_num]/dcmi.low_price_counties[y_denom])
+    # high_price_counties = dcmi.high_price_counties.sort_values(by=y, axis=0, ascending=False)
+
     
     sns.barplot(dcmi.low_price_counties[x], 
                 dcmi.low_price_counties[y_num] / dcmi.low_price_counties[y_denom], ax=ax[0], color=SEABORN_PALETTE[4])
