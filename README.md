@@ -1,6 +1,6 @@
 
 
-## Title: Schools, Hospitals & House Prices in the DC Metro Area
+## Schools, Hospitals & House Prices in the DC Metro Area
  
 
 ## Goals
