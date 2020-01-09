@@ -5,12 +5,45 @@ This module contains the functions for all the visualizations for our project.
 
 """
 
+import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 
 # Controls appearance of seaborn plots. Options: paper, notebook, talk, or poster
 SEABORN_CONTEXT = 'poster' 
+
+
+def barplots_2x2_matrix(dcmi, x, y, plot_titles=[['Higher Price, Lower % Private Schools', 'Higher Price, Higher % Private Schools'],
+                                                 ['Lower Price, Lower % Private Schools', 'Lower Price, Higher % Private Schools']]):    
+
+    f, ax = plt.subplots(2, 2, figsize=(22,16), sharey=True)
+
+#     plot_titles = [['Higher Price, Lower % Private Schools','Higher Price, Higher % Private Schools'],
+#                    ['Lower Price, Lower % Private Schools','Lower Price, Higher % Private Schools']]
+
+    sns.set_context('talk')
+    sns.despine(f)
+    
+    sns.barplot(dcmi.high_price_low_pct_private_schools[x], 
+                dcmi.high_price_low_pct_private_schools[y], ax=ax[0][0], color='blue')
+    sns.barplot(dcmi.high_price_high_pct_private_schools[x], 
+                dcmi.high_price_high_pct_private_schools[y], ax=ax[0][1], color='magenta')
+    sns.barplot(dcmi.low_price_low_pct_private_schools[x], 
+                dcmi.low_price_low_pct_private_schools[y], ax=ax[1][0], color='red')
+    sns.barplot(dcmi.low_price_high_pct_private_schools[x], 
+                dcmi.low_price_high_pct_private_schools[y], ax=ax[1][1], color='green')
+
+    for i in np.arange(0,2):
+        for j in np.arange(0,2):
+            plt.setp(ax[i][j].xaxis.get_majorticklabels(),rotation=90)
+            ax[i][j].title.set_text(plot_titles[i][j])
+            ax[i][j].set_xlim(-0.5,8-0.5)
+
+
+    plt.tight_layout()
+    
+    return f, ax
 
 
  
