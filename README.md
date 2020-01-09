@@ -7,8 +7,8 @@
 The goal of this analysis is to gain a better understanding of factors influencing house prices in counties of Washington, D.C metro area. Specifically, we tested whether the number of public schools, number of private schools, or number of hospitals had a significant association with house prices.
 
 ## Contributors:
- - Muoyo Okome (@muoyo)
- - VJ Paravastu (@vyjayanthipp)
+ - Muoyo Okome (<a href='https://github.com/muoyo/'>@muoyo</a>)
+ - VJ Paravastu (<a href='https://github.com/vyjayanthipp/'>@vyjayanthipp</a>)
 
 ## Summary & Links to Files:
 - <a href='presentation/dchousing.pdf'>Slide Deck (PDF)</a>
