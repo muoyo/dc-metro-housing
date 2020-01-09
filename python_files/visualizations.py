@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 # Controls appearance of seaborn plots. Options: paper, notebook, talk, or poster
 SEABORN_CONTEXT = 'talk' 
-SEABORN_PALETTE = sns.color_palette("pastel")
+SEABORN_PALETTE = sns.color_palette("bright")
 
 
 
