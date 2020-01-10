@@ -79,21 +79,21 @@ def merge_data(df_dcmetro, df_public_schools, df_private_schools, df_hospitals):
     return df_dcmetro_merged
 
 
-def merge_population_data (df_dcmetro_merged, df_population):
+def merge_population_data (df_dcmetro, df_population):
     """ Merge population data into dataset """
     
     df_population_dcarea = df_population.loc[df_population['State'].isin([' Virginia',' District of Columbia', ' Maryland',' West Virginia'])]
     df_population_dcarea.rename(columns = {'Geography_County':'RegionName'}, inplace = True)
     df_population_dcarea = df_population_dcarea.drop(['Id', 'Id2','State'], axis=1)
     
-    df_dcmetro_final = df_dcmetro_merged.merge(df_population_dcarea, how='left', on='RegionName') 
-    df_dcmetro_final['PeoplePerSchool'] = df_dcmetro_final['Population'] / df_dcmetro_final['NumberOfSchools']
-    df_dcmetro_final['PeoplePerHospital'] = df_dcmetro_final['Population'] / df_dcmetro_final['NumberOfHospitals']
-    df_dcmetro_final['PeoplePerHospital'] = df_dcmetro_final['PeoplePerHospital'].replace([np.inf, -np.inf], 0)
-    df_dcmetro_final['PublicSchoolsPerPerson'] =  df_dcmetro_final['NumberOfPublicSchools'] / df_dcmetro_final['Population']
-    df_dcmetro_final['PrivateSchoolsPerPerson'] =  df_dcmetro_final['NumberOfPrivateSchools'] / df_dcmetro_final['Population']
+    df_dcmetro_merged = df_dcmetro.merge(df_population_dcarea, how='left', on='RegionName') 
+    df_dcmetro_merged['PeoplePerSchool'] = df_dcmetro_merged['Population'] / df_dcmetro_merged['NumberOfSchools']
+    df_dcmetro_merged['PeoplePerHospital'] = df_dcmetro_merged['Population'] / df_dcmetro_merged['NumberOfHospitals']
+    df_dcmetro_merged['PeoplePerHospital'] = df_dcmetro_merged['PeoplePerHospital'].replace([np.inf, -np.inf], 0)
+    df_dcmetro_merged['PublicSchoolsPerPerson'] =  df_dcmetro_merged['NumberOfPublicSchools'] / df_dcmetro_merged['Population']
+    df_dcmetro_merged['PrivateSchoolsPerPerson'] =  df_dcmetro_merged['NumberOfPrivateSchools'] / df_dcmetro_merged['Population']
         
-    return df_dcmetro_final
+    return df_dcmetro_merged
 
 
 
