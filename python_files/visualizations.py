@@ -46,10 +46,10 @@ def barplots_2x2_matrix(dcmi, x, y, figsize=(20, 20), context=SEABORN_CONTEXT,
     sns.set_context(context)
     sns.despine(f)    
     
-    barplot(x, y, dcmi.high_price_low_pct_private_schools, ax[0][0], plot_titles[0][0], color='black')
+    barplot(x, y, dcmi.high_price_low_pct_private_schools, ax[0][0], plot_titles[0][0], color=SEABORN_PALETTE[7])
     barplot(x, y, dcmi.high_price_high_pct_private_schools, ax[0][1], plot_titles[0][1], color=SEABORN_PALETTE[9])
     barplot(x, y, dcmi.low_price_low_pct_private_schools, ax[1][0], plot_titles[1][0], color=SEABORN_PALETTE[4])
-    barplot(x, y, dcmi.low_price_high_pct_private_schools, ax[1][1], plot_titles[1][1], color='black')    
+    barplot(x, y, dcmi.low_price_high_pct_private_schools, ax[1][1], plot_titles[1][1], color=SEABORN_PALETTE[7])    
 
     
     for i in np.arange(0,2):
