@@ -19,7 +19,7 @@ SEABORN_PALETTE = sns.color_palette("dark")
 
 
 def barplot(x, y, counties, ax, title, color):
-    counties = counties.sort_values(by=y, axis=0, ascending=False)
+    # counties = counties.sort_values(by=y, axis=0, ascending=False)
     
     sns.barplot(counties[x], counties[y], ax=ax, label=y, color=color, alpha=0.6)
     plot_mean(counties[y], y, ax, color)
