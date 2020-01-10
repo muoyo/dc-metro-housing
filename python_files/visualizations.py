@@ -23,18 +23,24 @@ def barplot(x, y, counties, ax, title, color):
     
     sns.barplot(counties[x], counties[y], ax=ax, label=y, color=color, alpha=0.6)
     plot_mean(counties[y], y, ax, color)
+    
     plt.setp(ax.xaxis.get_majorticklabels(),rotation=90)
+    ax.yaxis.set_tick_params(labelbottom=True)
     ax.title.set_text(title)
+    ax.set_xlabel('')
+    ax.set_ylabel('')
     ax.legend()
     
     return ax
-    
+
+
 
 def plot_mean(y_series, y, ax, color):    
     ax.axhline(y_series.mean(), color=color, linewidth=5, linestyle='-', label='mean')
     ax.axhspan(y_series.quantile(.05), y_series.quantile(.95), color=color, alpha=0.25, label='95% confidence')
-    
+
     return ax
+
     
 
 def barplots_2x2_matrix(dcmi, x, y, figsize=(20, 20), context=SEABORN_CONTEXT,
@@ -55,7 +61,9 @@ def barplots_2x2_matrix(dcmi, x, y, figsize=(20, 20), context=SEABORN_CONTEXT,
     for i in np.arange(0,2):
         for j in np.arange(0,2):
             ax[i][j].set_xlim(-0.5,8-0.5)
-
+    
+    [[tk.set_visible(True) for tk in a.get_yticklabels()] for a in ax.flatten()]
+    
     plt.tight_layout()
     plt.show()
     
