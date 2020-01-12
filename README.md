@@ -18,5 +18,5 @@ The goal of this analysis is to gain a better understanding of factors influenci
     - [Exploratory Data Analysis](notebooks/dchousing_EDA.ipynb)
 - [Python Files](python_files/)
     - [Data Cleaning](python_files/data_cleaning.py)
-    - [Hypothesis Tests](python_files/hypothesis tests.py)
+    - [Hypothesis Tests](python_files/hypothesis_tests.py)
     - [Visualizations](python_files/visualizations.py)
